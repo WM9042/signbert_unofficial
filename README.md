@@ -40,6 +40,8 @@ mano_assets/
 
 # Create virtual environment
 
+Warning: This enviroment config file is outdated. I will update during future commit.
+
 ```bash
 conda env create -f environment.yml
 ```
@@ -49,6 +51,11 @@ conda env create -f environment.yml
 cd signbert/model/thirdparty/manotorch
 pip install .
 ```
+# Extract Keypoints
+
+Before training you will need to extract keypoints from your dataset. 
+
+The preferred method is by using RTMPose. (https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose)
 
 # Run a training session
 ```bash
